@@ -1,0 +1,145 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+  id 'org.jetbrains.kotlin.kapt'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module03.module06.module4'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation project(':module08:module705:module1')
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  androidTestImplementation 'androidx.compose.runtime:runtime:1.5.4'
+  androidTestImplementation 'com.squareup.anvil:annotations:2.5.0-beta09'
+  androidTestImplementation 'org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.20'
+  api project(':module03:module06:module3')
+  api project(':module08:module002:module3')
+  api project(':module08:module005:module1')
+  api project(':module08:module007:module1')
+  api project(':module08:module008:module4')
+  api project(':module08:module004:module1')
+  api project(':module08:module004:module6')
+  api project(':module08:module036:module2')
+  api project(':module08:module038:module2')
+  api project(':module08:module069:module2')
+  api project(':module08:module119:module3')
+  api project(':module08:module118:module6:module1')
+  api project(':module08:module123:module1')
+  api project(':module08:module142:module7')
+  api project(':module08:module225:module2')
+  api project(':module08:module228:module1')
+  api project(':module08:module229:module9')
+  api project(':module08:module231:module1')
+  api project(':module08:module241:module2')
+  api project(':module08:module241:module3')
+  api project(':module08:module240:module4')
+  api project(':module08:module239:module1')
+  api project(':module08:module253:module1')
+  api project(':module08:module273:module2')
+  api project(':module08:module273:module5')
+  api project(':module08:module275:module2')
+  api project(':module08:module275:module6')
+  api project(':module08:module286:module2')
+  api project(':module08:module290')
+  api project(':module08:module311:module1')
+  api project(':module08:module327:module5')
+  api project(':module08:module327:module6')
+  api project(':module08:module338:module6')
+  api project(':module08:module349:module6:module1')
+  api project(':module08:module349:module7:module1')
+  api project(':module08:module376:module1')
+  api project(':module08:module376:module2')
+  api project(':module08:module380')
+  api project(':module08:module388:module1')
+  api project(':module08:module388:module2')
+  api project(':module08:module388:module3')
+  api project(':module08:module400:module4')
+  api project(':module08:module441:module1')
+  api project(':module08:module441:module4')
+  api project(':module08:module441:module5')
+  api project(':module08:module441:module6')
+  api project(':module08:module441:module8')
+  api project(':module08:module446:module2')
+  api project(':module08:module490:module1')
+  api project(':module08:module492:module1')
+  api project(':module08:module640:module1')
+  api project(':module08:module640:module2')
+  api project(':module08:module707:module2')
+  api project(':module08:module707:module4')
+  api project(':module08:module704:module01')
+  api project(':module08:module704:module11')
+  api project(':module08:module709:module1')
+  api project(':module08:module709:module3')
+  api project(':module08:module709:module4')
+  api project(':module08:module724:module2')
+  api project(':module08:module751:module2')
+  api project(':module08:module779:module04')
+  api project(':module08:module779:module06')
+  api project(':module08:module779:module09')
+  api project(':module08:module779:module11')
+  api project(':module08:module779:module12')
+  api project(':module08:module817:module1')
+  api project(':module08:module817:module2')
+  api project(':module08:module817:module3')
+  api project(':module08:module816:module1:module1')
+  api project(':module08:module836:module1')
+  api project(':module08:module836:module2')
+  api project(':module17:module3:module16:module2')
+  api project(':module17:module3:module17:module3')
+  api project(':module17:module3:module21:module2')
+  api 'androidx.appcompat:appcompat:1.6.1'
+  api 'com.google.android.gms:play-services-base:17.1.0'
+  api 'com.google.code.gson:gson:2.10.1'
+  api 'com.google.dagger:dagger:2.50'
+  api 'com.squareup.encryption:encryption:0.0.12'
+  api 'com.squareup.leakcanary:leakcanary-android-release:3.0-alpha-8'
+  api 'com.squareup.retrofit2:retrofit-mock:2.11.0'
+  api 'javax.inject:javax.inject:1'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+  compileOnly project(':module08:module705:module1')
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  compileOnly 'androidx.compose.runtime:runtime:1.5.4'
+  compileOnly 'com.squareup.anvil:annotations:2.5.0-beta09'
+  compileOnly 'org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.20'
+  implementation project(':module08:module004:module4')
+  implementation project(':module08:module119:module4')
+  implementation project(':module08:module276:module26')
+  implementation project(':module08:module378')
+  implementation project(':module08:module442:module1')
+  implementation project(':module08:module441:module3')
+  implementation project(':module08:module441:module7')
+  implementation project(':module08:module466:module1')
+  implementation project(':module08:module587:module2')
+  implementation project(':module08:module600:module3')
+  implementation project(':module08:module620:module2')
+  implementation project(':module08:module706:module1')
+  implementation project(':module08:module724:module4')
+  implementation project(':module08:module779:module03')
+  implementation project(':module08:module779:module05')
+  implementation project(':module08:module779:module07')
+  implementation project(':module08:module793:module5')
+  implementation project(':module08:module837:module1:module2')
+  implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0'
+  implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+  implementation 'com.squareup.radiography:radiography:2.5'
+  implementation 'com.squareup.workflow1:workflow-core-jvm:1.12.1-beta10'
+  implementation 'com.squareup.workflow1:workflow-ui-radiography:1.12.1-beta10'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  kapt 'com.google.dagger:dagger-compiler:2.50'
+}

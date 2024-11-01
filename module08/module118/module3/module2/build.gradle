@@ -1,0 +1,55 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module118.module3.module2'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module06:module60:module4')
+  api project(':module08:module004:module6')
+  api project(':module08:module067:module1')
+  api project(':module08:module068:module4')
+  api project(':module08:module115:module1')
+  api project(':module08:module118:module3:module1')
+  api project(':module08:module118:module3:module5')
+  api project(':module08:module253:module1')
+  api project(':module08:module286:module4')
+  api project(':module08:module291:module09:module1')
+  api project(':module08:module329:module1')
+  api project(':module08:module491:module1')
+  api project(':module08:module674:module6')
+  api project(':module08:module735:module5')
+  api project(':module08:module779:module12')
+  api project(':module08:module793:module6')
+  api 'com.f2prateek.rx.preferences2:rx-preferences:2.0.2'
+  api 'com.google.dagger:dagger:2.50'
+  api 'com.squareup.picasso3:picasso:3.0.0-alpha03'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module038:module2')
+  implementation project(':module08:module039:module5')
+  implementation project(':module08:module492:module1')
+  implementation project(':module08:module634')
+  implementation project(':module08:module670:module1')
+  implementation project(':module08:module806:module2')
+  implementation project(':module08:module808:module1')
+  implementation 'com.squareup.logcat:logcat:0.1'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+}

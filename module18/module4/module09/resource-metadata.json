@@ -1,0 +1,470 @@
+{
+  "androidResources": {
+    "animator": [],
+    "anim": [],
+    "color": [],
+    "drawable": [
+      {
+        "qualifiers": "",
+        "extension": "xml",
+        "quantity": 15,
+        "fileData": [
+          7,
+          21,
+          9,
+          10,
+          9,
+          9,
+          26,
+          7,
+          22,
+          9,
+          24,
+          9,
+          22,
+          9,
+          7
+        ]
+      },
+      {
+        "qualifiers": "",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          22114
+        ]
+      },
+      {
+        "qualifiers": "ca-rES-mdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          24680
+        ]
+      },
+      {
+        "qualifiers": "en-rAU-mdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          22868
+        ]
+      },
+      {
+        "qualifiers": "en-rCA-mdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          22890
+        ]
+      },
+      {
+        "qualifiers": "en-rGB-mdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          23266
+        ]
+      },
+      {
+        "qualifiers": "en-rIE-mdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          22996
+        ]
+      },
+      {
+        "qualifiers": "es-rES-mdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          24534
+        ]
+      },
+      {
+        "qualifiers": "es-rUS-mdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          25112
+        ]
+      },
+      {
+        "qualifiers": "fr-rCA-mdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          24864
+        ]
+      },
+      {
+        "qualifiers": "fr-rFR-mdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          24948
+        ]
+      },
+      {
+        "qualifiers": "ja-mdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          22872
+        ]
+      },
+      {
+        "qualifiers": "mdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          392
+        ]
+      },
+      {
+        "qualifiers": "xhdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          706
+        ]
+      }
+    ],
+    "font": [],
+    "layout": [
+      {
+        "qualifiers": "",
+        "extension": "xml",
+        "quantity": 19,
+        "fileData": [
+          11,
+          107,
+          30,
+          104,
+          35,
+          8,
+          35,
+          138,
+          199,
+          106,
+          125,
+          58,
+          57,
+          72,
+          67,
+          33,
+          11,
+          74,
+          49
+        ]
+      },
+      {
+        "qualifiers": "sw600dp",
+        "extension": "xml",
+        "quantity": 4,
+        "fileData": [
+          139,
+          182,
+          58,
+          45
+        ]
+      }
+    ],
+    "menu": [],
+    "mipmap": [],
+    "navigation": [],
+    "raw": [],
+    "transition": [],
+    "values": [
+      {
+        "qualifiers": "",
+        "extension": "xml",
+        "quantity": 7,
+        "valuesFileList": [
+          {
+            "stringCount": 0,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 6,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          },
+          {
+            "stringCount": 0,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 14,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          },
+          {
+            "stringCount": 2,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          },
+          {
+            "stringCount": 0,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": [
+              3,
+              3
+            ]
+          },
+          {
+            "stringCount": 182,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          },
+          {
+            "stringCount": 0,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          },
+          {
+            "stringCount": 0,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      },
+      {
+        "qualifiers": "ca-rES",
+        "extension": "xml",
+        "quantity": 1,
+        "valuesFileList": [
+          {
+            "stringCount": 181,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      },
+      {
+        "qualifiers": "en-rAU",
+        "extension": "xml",
+        "quantity": 1,
+        "valuesFileList": [
+          {
+            "stringCount": 181,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      },
+      {
+        "qualifiers": "en-rCA",
+        "extension": "xml",
+        "quantity": 1,
+        "valuesFileList": [
+          {
+            "stringCount": 181,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      },
+      {
+        "qualifiers": "en-rGB",
+        "extension": "xml",
+        "quantity": 1,
+        "valuesFileList": [
+          {
+            "stringCount": 181,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      },
+      {
+        "qualifiers": "en-rIE",
+        "extension": "xml",
+        "quantity": 1,
+        "valuesFileList": [
+          {
+            "stringCount": 181,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      },
+      {
+        "qualifiers": "es-rES",
+        "extension": "xml",
+        "quantity": 1,
+        "valuesFileList": [
+          {
+            "stringCount": 181,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      },
+      {
+        "qualifiers": "es-rUS",
+        "extension": "xml",
+        "quantity": 1,
+        "valuesFileList": [
+          {
+            "stringCount": 181,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      },
+      {
+        "qualifiers": "fr-rCA",
+        "extension": "xml",
+        "quantity": 1,
+        "valuesFileList": [
+          {
+            "stringCount": 181,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      },
+      {
+        "qualifiers": "fr-rFR",
+        "extension": "xml",
+        "quantity": 1,
+        "valuesFileList": [
+          {
+            "stringCount": 181,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      },
+      {
+        "qualifiers": "ja",
+        "extension": "xml",
+        "quantity": 1,
+        "valuesFileList": [
+          {
+            "stringCount": 181,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      },
+      {
+        "qualifiers": "sw600dp",
+        "extension": "xml",
+        "quantity": 1,
+        "valuesFileList": [
+          {
+            "stringCount": 0,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 0,
+            "dimenCount": 1,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      }
+    ],
+    "xml": []
+  },
+  "javaResources": {},
+  "assets": {}
+}

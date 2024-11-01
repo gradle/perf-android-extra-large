@@ -1,0 +1,26 @@
+plugins {
+  id 'com.android.library'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module354.module1'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module08:module353:module1')
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.robolectric:robolectric:4.11.1'
+}

@@ -1,0 +1,84 @@
+plugins {
+  id 'com.android.application'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module03.module03.module1'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation project(':module03:module03:module5')
+  androidTestImplementation project(':module03:module03:module7')
+  androidTestImplementation project(':module06:module16:module11')
+  androidTestImplementation project(':module06:module32:module2')
+  androidTestImplementation project(':module07:module23:module1:module2')
+  androidTestImplementation project(':module08:module077:module5')
+  androidTestImplementation project(':module08:module127:module3')
+  androidTestImplementation project(':module08:module223:module09')
+  androidTestImplementation project(':module08:module243:module1')
+  androidTestImplementation project(':module08:module278:module3')
+  androidTestImplementation project(':module08:module284:module3')
+  androidTestImplementation project(':module08:module276:module08')
+  androidTestImplementation project(':module08:module291:module02:module4:module5')
+  androidTestImplementation project(':module08:module291:module02:module6:module5')
+  androidTestImplementation project(':module08:module324:module2')
+  androidTestImplementation project(':module08:module331:module04:module5')
+  androidTestImplementation project(':module08:module331:module06:module2')
+  androidTestImplementation project(':module08:module331:module08:module1')
+  androidTestImplementation project(':module08:module345:module1')
+  androidTestImplementation project(':module08:module382:module2')
+  androidTestImplementation project(':module08:module396:module2')
+  androidTestImplementation project(':module08:module409:module01:module02')
+  androidTestImplementation project(':module08:module409:module01:module05')
+  androidTestImplementation project(':module08:module409:module04:module4')
+  androidTestImplementation project(':module08:module410:module04:module2')
+  androidTestImplementation project(':module08:module410:module05:module3')
+  androidTestImplementation project(':module08:module419:module3')
+  androidTestImplementation project(':module08:module473:module1')
+  androidTestImplementation project(':module08:module489:module3')
+  androidTestImplementation project(':module08:module497:module4')
+  androidTestImplementation project(':module08:module518:module3')
+  androidTestImplementation project(':module08:module517:module02')
+  androidTestImplementation project(':module08:module619:module5:module1')
+  androidTestImplementation project(':module08:module642:module3')
+  androidTestImplementation project(':module08:module712:module2')
+  androidTestImplementation project(':module08:module806:module2')
+  androidTestImplementation project(':module09:module03:module16:module3')
+  androidTestImplementation project(':module10:module2:module1')
+  androidTestImplementation project(':module11:module1')
+  androidTestImplementation project(':module13:module4:module2')
+  androidTestImplementation project(':module13:module9')
+  androidTestImplementation project(':module15:module1:module1')
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.3.0'
+  androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+  androidTestImplementation 'androidx.test.espresso:espresso-idling-resource:3.4.0'
+  androidTestImplementation 'androidx.test:rules:1.5.0'
+  androidTestImplementation 'androidx.test:runner:1.5.2'
+  androidTestImplementation 'com.google.android.apps.common.testing.accessibility.framework:accessibility-test-framework:2.0-jetified'
+  androidTestImplementation 'com.google.truth:truth:1.2.0'
+  androidTestImplementation 'com.squareup.burst:burst-junit4:1.1.1'
+  androidTestImplementation 'com.squareup.leakcanary:leakcanary-android-instrumentation:3.0-alpha-8'
+  androidTestImplementation 'junit:junit:4.13.2'
+  androidTestImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module03:module03:module6')
+  implementation project(':module08:module461')
+  implementation project(':module08:module466:module1')
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+}

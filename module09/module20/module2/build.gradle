@@ -1,0 +1,169 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module09.module20.module2'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+    compose = true
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.5.4'
+  api project(':module08:module022:module3')
+  api project(':module08:module031:module4:module4')
+  api project(':module08:module253:module1')
+  api project(':module08:module308:module3')
+  api project(':module08:module427:module2')
+  api project(':module08:module426:module12')
+  api project(':module08:module432:module4')
+  api project(':module08:module513:module5')
+  api project(':module08:module568:module5')
+  api project(':module08:module728:module2')
+  api project(':module09:module20:module6')
+  api 'com.google.dagger:dagger:2.50'
+  api 'javax.inject:javax.inject:1'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module01:module03:module1')
+  implementation project(':module06:module41:module3')
+  implementation project(':module07:module02:module4')
+  implementation project(':module07:module06:module15:module2')
+  implementation project(':module07:module13:module6')
+  implementation project(':module08:module022:module3')
+  implementation project(':module08:module025:module1:module8')
+  implementation project(':module08:module033:module6')
+  implementation project(':module08:module070:module3')
+  implementation project(':module08:module113:module8')
+  implementation project(':module08:module121:module7')
+  implementation project(':module08:module132:module1')
+  implementation project(':module08:module152:module6')
+  implementation project(':module08:module196:module4')
+  implementation project(':module08:module202:module7')
+  implementation project(':module08:module222:module8')
+  implementation project(':module08:module229:module9')
+  implementation project(':module08:module231:module1')
+  implementation project(':module08:module235:module1')
+  implementation project(':module08:module253:module1')
+  implementation project(':module08:module262:module3')
+  implementation project(':module08:module275:module6')
+  implementation project(':module08:module291:module05:module4:module1')
+  implementation project(':module08:module291:module05:module7:module4')
+  implementation project(':module08:module291:module06:module3')
+  implementation project(':module08:module326')
+  implementation project(':module08:module324:module8')
+  implementation project(':module08:module338:module7')
+  implementation project(':module08:module356:module3')
+  implementation project(':module08:module361:module8')
+  implementation project(':module08:module378')
+  implementation project(':module08:module389:module3')
+  implementation project(':module08:module400:module7')
+  implementation project(':module08:module434:module1')
+  implementation project(':module08:module435:module11')
+  implementation project(':module08:module440:module4')
+  implementation project(':module08:module469:module1:module3')
+  implementation project(':module08:module480:module02:module5')
+  implementation project(':module08:module477:module8')
+  implementation project(':module08:module486:module2')
+  implementation project(':module08:module493:module1')
+  implementation project(':module08:module507:module4')
+  implementation project(':module08:module509:module1')
+  implementation project(':module08:module506:module1')
+  implementation project(':module08:module511:module4')
+  implementation project(':module08:module549:module01:module8')
+  implementation project(':module08:module549:module09:module6')
+  implementation project(':module08:module550:module8')
+  implementation project(':module08:module553:module5')
+  implementation project(':module08:module556:module3')
+  implementation project(':module08:module558:module3')
+  implementation project(':module08:module560:module4')
+  implementation project(':module08:module561:module1:module2')
+  implementation project(':module08:module561:module4:module4')
+  implementation project(':module08:module561:module5:module7')
+  implementation project(':module08:module589:module3')
+  implementation project(':module08:module593:module3')
+  implementation project(':module08:module594:module1')
+  implementation project(':module08:module612:module4')
+  implementation project(':module08:module625:module5')
+  implementation project(':module08:module626:module5')
+  implementation project(':module08:module644:module1')
+  implementation project(':module08:module650:module1')
+  implementation project(':module08:module705:module1')
+  implementation project(':module08:module755:module1')
+  implementation project(':module08:module785:module6')
+  implementation project(':module08:module795:module1')
+  implementation project(':module08:module810:module3')
+  implementation project(':module08:module817:module3')
+  implementation project(':module08:module819:module2')
+  implementation project(':module08:module822:module1')
+  implementation project(':module08:module835:module1')
+  implementation project(':module08:module836:module2')
+  implementation project(':module08:module839:module2')
+  implementation project(':module08:module840:module2')
+  implementation project(':module08:module842:module2')
+  implementation project(':module08:module837:module3:module1')
+  implementation project(':module08:module844:module2')
+  implementation project(':module09:module01:module3')
+  implementation project(':module09:module18:module2')
+  implementation project(':module09:module19:module6')
+  implementation project(':module09:module20:module5')
+  implementation project(':module09:module29:module10')
+  implementation project(':module14:module2:module3')
+  implementation project(':module25:module2:module1')
+  implementation project(':module25:module9:module2')
+  implementation 'androidx.compose.foundation:foundation:1.5.4'
+  implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+  implementation 'com.squareup.logcat:logcat:0.1'
+  implementation 'com.squareup.workflow1:workflow-ui-core-android:1.12.1-beta10'
+  implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  testImplementation project(':module08:module020:module6')
+  testImplementation project(':module08:module111:module2')
+  testImplementation project(':module08:module198:module9')
+  testImplementation project(':module08:module222:module9')
+  testImplementation project(':module08:module226:module3')
+  testImplementation project(':module08:module232:module2')
+  testImplementation project(':module08:module275:module1')
+  testImplementation project(':module08:module324:module9')
+  testImplementation project(':module08:module338:module8')
+  testImplementation project(':module08:module426:module02')
+  testImplementation project(':module08:module484:module1')
+  testImplementation project(':module08:module549:module09:module1')
+  testImplementation project(':module08:module558:module4')
+  testImplementation project(':module08:module620:module4')
+  testImplementation project(':module08:module625:module6')
+  testImplementation project(':module08:module679:module2')
+  testImplementation project(':module08:module704:module13')
+  testImplementation project(':module08:module785:module1')
+  testImplementation project(':module08:module810:module4')
+  testImplementation project(':module08:module817:module4')
+  testImplementation project(':module08:module819:module3')
+  testImplementation project(':module08:module842:module3')
+  testImplementation project(':module14:module2:module4')
+  testImplementation 'androidx.test:monitor:1.6.1'
+  testImplementation 'app.cash.turbine:turbine:0.13.0'
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'com.squareup.ui.model.resources:uisys-android-resource-models-testing:14.16.0'
+  testImplementation 'com.squareup.workflow1:workflow-testing-jvm:1.12.1-beta10'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+  testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3'
+  testImplementation 'org.mockito.kotlin:mockito-kotlin:4.1.0'
+  testImplementation 'org.mockito:mockito-core:4.4.0'
+  testImplementation 'org.robolectric:robolectric:4.11.1'
+  testImplementation 'org.threeten:threetenbp:1.6.5'
+}

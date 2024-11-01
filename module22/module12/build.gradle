@@ -1,0 +1,9 @@
+plugins {
+  id 'java-library'
+  id 'java'
+  id 'org.jetbrains.kotlin.jvm'
+}
+dependencies {
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  testImplementation project(':module22:module13')
+}

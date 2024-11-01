@@ -1,0 +1,45 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module558.module3'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+    androidResources = true
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module08:module253:module1')
+  api project(':module08:module780:module1')
+  api project(':module08:module817:module3')
+  api project(':module14:module2:module3')
+  api project(':module14:module5:module4')
+  api 'com.google.dagger:dagger:2.50'
+  api 'io.reactivex.rxjava2:rxjava:2.2.21'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module209:module2')
+  implementation project(':module08:module835:module1')
+  implementation 'androidx.core:core-ktx:1.12.0'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  testImplementation project(':module08:module558:module4')
+  testImplementation project(':module14:module2:module4')
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+  testImplementation 'org.threeten:threetenbp:1.6.5'
+}

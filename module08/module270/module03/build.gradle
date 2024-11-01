@@ -1,0 +1,81 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module270.module03'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module08:module004:module2')
+  api project(':module08:module020:module3')
+  api project(':module08:module043:module1')
+  api project(':module08:module061:module06:module2')
+  api project(':module08:module061:module09:module05')
+  api project(':module08:module061:module09:module09')
+  api project(':module08:module068:module3')
+  api project(':module08:module069:module2')
+  api project(':module08:module118:module6:module1')
+  api project(':module08:module208:module1')
+  api project(':module08:module229:module3')
+  api project(':module08:module229:module5')
+  api project(':module08:module253:module1')
+  api project(':module08:module271:module3')
+  api project(':module08:module270:module13')
+  api project(':module08:module270:module15')
+  api project(':module08:module272:module3')
+  api project(':module08:module273:module4')
+  api project(':module08:module275:module1')
+  api project(':module08:module297:module2')
+  api project(':module08:module338:module4')
+  api project(':module08:module360:module1')
+  api project(':module08:module361:module3')
+  api project(':module08:module376:module1')
+  api project(':module08:module388:module2')
+  api project(':module08:module426:module05')
+  api project(':module08:module426:module12')
+  api project(':module08:module466:module1')
+  api project(':module08:module593:module1')
+  api project(':module08:module640:module1')
+  api project(':module08:module704:module07')
+  api project(':module08:module704:module11')
+  api project(':module08:module709:module3')
+  api project(':module08:module779:module03')
+  api project(':module08:module779:module05')
+  api project(':module08:module779:module07')
+  api project(':module08:module779:module09')
+  api project(':module08:module779:module11')
+  api project(':module08:module791:module1')
+  api project(':module08:module810:module1')
+  api project(':module08:module817:module2')
+  api project(':module08:module819:module1')
+  api project(':module08:module841:module1')
+  api 'com.f2prateek.rx.preferences2:rx-preferences:2.0.2'
+  api 'com.google.dagger:dagger:2.50'
+  api 'com.squareup.okhttp3:logging-interceptor:4.11.0'
+  api 'com.squareup.workflow1:workflow-runtime-jvm:1.12.1-beta10'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module228:module1')
+  implementation project(':module08:module229:module9')
+  implementation project(':module08:module270:module15')
+  implementation project(':module08:module677:module1')
+  implementation project(':module08:module679:module1')
+  implementation 'com.squareup.logcat:logcat:0.1'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+}

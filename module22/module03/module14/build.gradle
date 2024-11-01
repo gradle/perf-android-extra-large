@@ -1,0 +1,12 @@
+plugins {
+  id 'java-library'
+  id 'java'
+  id 'org.jetbrains.kotlin.jvm'
+}
+dependencies {
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  implementation project(':module22:module12')
+  implementation 'com.google.dagger:dagger:2.50'
+  testImplementation project(':module22:module03:module26')
+  testImplementation project(':module22:module13')
+}

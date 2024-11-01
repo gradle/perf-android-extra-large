@@ -1,0 +1,40 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module023.module4'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module08:module023:module2')
+  api project(':module08:module023:module5')
+  api project(':module08:module023:module6')
+  api project(':module08:module253:module1')
+  api project(':module08:module709:module4')
+  api project(':module08:module817:module3')
+  api 'com.appsflyer:af-android-sdk:6.13.1'
+  api 'com.f2prateek.rx.preferences2:rx-preferences:2.0.2'
+  api 'com.google.dagger:dagger:2.50'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  runtimeOnly project(':module08:module120:module2')
+  testImplementation project(':module08:module226:module3')
+  testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3'
+}

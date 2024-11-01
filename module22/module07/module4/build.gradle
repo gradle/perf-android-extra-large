@@ -1,0 +1,43 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+  id 'org.jetbrains.kotlin.kapt'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module22.module07.module4'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    androidResources = true
+    viewBinding = true
+  }
+}
+dependencies {
+  api 'androidx.databinding:viewbinding:8.3.1'
+  implementation project(':module22:module03:module05')
+  implementation project(':module22:module04')
+  implementation project(':module22:module07:module1')
+  implementation project(':module22:module07:module6')
+  implementation project(':module22:module10')
+  implementation 'com.google.dagger:dagger:2.50'
+  implementation 'com.squareup.logcat:logcat:0.1'
+  implementation 'commons-io:commons-io:2.5'
+  implementation 'net.jcip:jcip-annotations:1.0'
+  implementation 'org.apache.commons:commons-lang3:3.5'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-common:1.9.20'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.20'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.20'
+  implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0'
+  kapt 'com.google.dagger:dagger-compiler:2.50'
+  testImplementation project(':module22:module13')
+}

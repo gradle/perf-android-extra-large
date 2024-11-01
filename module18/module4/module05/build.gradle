@@ -1,0 +1,54 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module18.module4.module05'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+    androidResources = true
+    compose = true
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.5.4'
+  api project(':module08:module253:module1')
+  api project(':module08:module665:module1')
+  api project(':module08:module837:module1:module2')
+  api project(':module08:module837:module2:module1')
+  api project(':module18:module4:module09')
+  api 'com.google.dagger:dagger:2.50'
+  api 'com.squareup.workflow1:workflow-core:1.12.1-beta10'
+  api 'com.squareup.workflow1:workflow-ui-compose:1.12.1-beta10'
+  api 'javax.inject:javax.inject:1'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module819:module2')
+  implementation 'androidx.compose.foundation:foundation:1.5.4'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  testImplementation project(':module08:module226:module3')
+  testImplementation project(':module08:module324:module9')
+  testImplementation project(':module08:module338:module8')
+  testImplementation project(':module08:module604:module1')
+  testImplementation project(':module08:module679:module2')
+  testImplementation project(':module08:module704:module13')
+  testImplementation project(':module08:module778:module5')
+  testImplementation project(':module08:module779:module13')
+  testImplementation project(':module08:module817:module4')
+  testImplementation project(':module08:module819:module3')
+  testImplementation 'com.squareup.workflow1:workflow-testing-jvm:1.12.1-beta10'
+  testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3'
+}

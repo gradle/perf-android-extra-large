@@ -1,0 +1,101 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module477.module3'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+    androidResources = true
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module08:module005:module1')
+  api project(':module08:module008:module4')
+  api project(':module08:module020:module5')
+  api project(':module08:module036:module2')
+  api project(':module08:module140:module4')
+  api project(':module08:module253:module1')
+  api project(':module08:module276:module26')
+  api project(':module08:module291:module09:module4')
+  api project(':module08:module338:module7')
+  api project(':module08:module376:module2')
+  api project(':module08:module427:module2')
+  api project(':module08:module426:module12')
+  api project(':module08:module445:module01:module1')
+  api project(':module08:module477:module7')
+  api project(':module08:module477:module8')
+  api project(':module08:module491:module1')
+  api project(':module08:module492:module1')
+  api project(':module08:module625:module5')
+  api project(':module08:module778:module4')
+  api project(':module08:module779:module12')
+  api project(':module08:module785:module6')
+  api project(':module08:module810:module3')
+  api project(':module08:module817:module3')
+  api project(':module08:module819:module2')
+  api 'com.google.dagger:dagger:2.50'
+  api 'com.squareup.okio:okio:3.5.0'
+  api 'javax.inject:javax.inject:1'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  compileOnly 'com.google.code.gson:gson:2.10.1'
+  implementation project(':module08:module120:module2')
+  implementation project(':module08:module180:module5')
+  implementation project(':module08:module231:module1')
+  implementation project(':module08:module291:module06:module3')
+  implementation project(':module08:module480:module12:module2')
+  implementation project(':module08:module620:module3')
+  implementation project(':module08:module652:module3')
+  implementation project(':module08:module705:module1')
+  implementation project(':module08:module706:module1')
+  implementation project(':module08:module704:module12')
+  implementation project(':module08:module776:module1')
+  implementation 'androidx.collection:collection:1.4.0'
+  implementation 'androidx.core:core-ktx:1.12.0'
+  implementation 'androidx.core:core:1.12.0'
+  implementation 'com.jakewharton.threetenabp:threetenabp:1.4.4'
+  implementation 'com.squareup.logcat:logcat:0.1'
+  implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-rx2:1.7.3'
+  testImplementation project(':module08:module020:module6')
+  testImplementation project(':module08:module226:module3')
+  testImplementation project(':module08:module276:module02')
+  testImplementation project(':module08:module338:module8')
+  testImplementation project(':module08:module426:module02')
+  testImplementation project(':module08:module477:module9')
+  testImplementation project(':module08:module484:module1')
+  testImplementation project(':module08:module492:module2')
+  testImplementation project(':module08:module593:module4')
+  testImplementation project(':module08:module625:module6')
+  testImplementation project(':module08:module704:module13')
+  testImplementation project(':module08:module785:module1')
+  testImplementation project(':module08:module810:module4')
+  testImplementation project(':module08:module817:module4')
+  testImplementation project(':module08:module819:module3')
+  testImplementation 'androidx.test:core:1.5.0'
+  testImplementation 'app.cash.turbine:turbine:0.13.0'
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+  testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3'
+  testImplementation 'org.mockito.kotlin:mockito-kotlin:4.1.0'
+  testImplementation 'org.mockito:mockito-core:4.4.0'
+  testImplementation 'org.robolectric:robolectric:4.11.1'
+  testImplementation 'org.threeten:threetenbp:1.6.5'
+}

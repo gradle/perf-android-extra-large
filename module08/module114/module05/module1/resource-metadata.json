@@ -1,0 +1,96 @@
+{
+  "androidResources": {
+    "animator": [],
+    "anim": [],
+    "color": [],
+    "drawable": [
+      {
+        "qualifiers": "",
+        "extension": "xml",
+        "quantity": 1,
+        "fileData": [
+          15
+        ]
+      }
+    ],
+    "font": [],
+    "layout": [],
+    "menu": [],
+    "mipmap": [
+      {
+        "qualifiers": "anydpi-v26",
+        "extension": "xml",
+        "quantity": 1,
+        "fileData": [
+          5
+        ]
+      },
+      {
+        "qualifiers": "hdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          3134
+        ]
+      },
+      {
+        "qualifiers": "mdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          1992
+        ]
+      },
+      {
+        "qualifiers": "xhdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          4164
+        ]
+      },
+      {
+        "qualifiers": "xxhdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          6014
+        ]
+      },
+      {
+        "qualifiers": "xxxhdpi",
+        "extension": "webp",
+        "quantity": 1,
+        "fileData": [
+          8110
+        ]
+      }
+    ],
+    "navigation": [],
+    "raw": [],
+    "transition": [],
+    "values": [
+      {
+        "qualifiers": "",
+        "extension": "xml",
+        "quantity": 1,
+        "valuesFileList": [
+          {
+            "stringCount": 0,
+            "intCount": 0,
+            "boolCount": 0,
+            "colorCount": 1,
+            "dimenCount": 0,
+            "idCount": 0,
+            "integerArrayCount": [],
+            "arrayCount": [],
+            "styleCount": []
+          }
+        ]
+      }
+    ],
+    "xml": []
+  },
+  "javaResources": {},
+  "assets": {}
+}

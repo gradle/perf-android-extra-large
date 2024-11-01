@@ -1,0 +1,16 @@
+plugins {
+  id 'java-library'
+  id 'java'
+  id 'org.jetbrains.kotlin.jvm'
+  id 'org.jetbrains.kotlin.kapt'
+}
+dependencies {
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'com.squareup.anvil:annotations:2.5.0-beta09'
+  implementation project(':module08:module253:module1')
+  implementation 'com.google.dagger:dagger:2.50'
+  implementation 'com.jakewharton.threetenabp:threetenabp:1.4.4'
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.threeten:threetenbp:1.6.5'
+}

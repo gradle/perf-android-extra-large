@@ -1,0 +1,30 @@
+plugins {
+  id 'com.android.library'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module353.module1'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module491:module1')
+  implementation 'androidx.activity:activity:1.7.0'
+  implementation 'androidx.lifecycle:lifecycle-common:2.6.1'
+  implementation 'com.jakewharton.rxrelay2:rxrelay:2.1.0'
+  implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'junit:junit:4.13.2'
+}

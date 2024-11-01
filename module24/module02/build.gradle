@@ -1,0 +1,52 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module24.module02'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module061:module01:module7')
+  implementation project(':module08:module061:module04:module3')
+  implementation project(':module08:module061:module08:module5')
+  implementation project(':module08:module286:module4')
+  implementation project(':module08:module376:module2')
+  implementation project(':module08:module388:module3')
+  implementation project(':module08:module704:module08')
+  implementation project(':module08:module819:module2')
+  implementation 'androidx.test.espresso:espresso-core:3.3.0'
+  implementation 'androidx.test.ext:junit:1.1.5'
+  implementation 'androidx.test.uiautomator:uiautomator:2.3.0'
+  implementation 'androidx.test:runner:1.5.2'
+  implementation 'com.squareup.logcat:logcat:0.1'
+  implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0'
+  implementation 'com.squareup.okhttp3:okhttp:4.11.0'
+  implementation 'com.squareup.retrofit2:adapter-rxjava2:2.11.0'
+  implementation 'com.squareup.retrofit2:converter-wire:2.11.0'
+  implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+  implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  implementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+  testImplementation 'com.google.testparameterinjector:test-parameter-injector:1.8'
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+}

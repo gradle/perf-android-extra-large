@@ -1,0 +1,109 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module03.module04.module2'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module03:module04:module3')
+  api project(':module06:module01:module1')
+  api project(':module06:module13:module1')
+  api project(':module06:module16:module13')
+  api project(':module06:module57:module2')
+  api project(':module06:module59:module2')
+  api project(':module06:module60:module3')
+  api project(':module08:module002:module1')
+  api project(':module08:module020:module3')
+  api project(':module08:module033:module5')
+  api project(':module08:module038:module2')
+  api project(':module08:module040:module2')
+  api project(':module08:module061:module06:module2')
+  api project(':module08:module068:module3')
+  api project(':module08:module121:module3')
+  api project(':module08:module130:module1')
+  api project(':module08:module180:module4')
+  api project(':module08:module208:module2')
+  api project(':module08:module217:module3')
+  api project(':module08:module218:module3')
+  api project(':module08:module222:module7')
+  api project(':module08:module225:module1')
+  api project(':module08:module241:module1')
+  api project(':module08:module240:module4')
+  api project(':module08:module253:module1')
+  api project(':module08:module279:module1')
+  api project(':module08:module291:module10:module2:module1')
+  api project(':module08:module297:module3')
+  api project(':module08:module321:module3')
+  api project(':module08:module327:module5')
+  api project(':module08:module339:module1')
+  api project(':module08:module347:module3')
+  api project(':module08:module349:module7:module2')
+  api project(':module08:module360:module1')
+  api project(':module08:module376:module1')
+  api project(':module08:module388:module2')
+  api project(':module08:module400:module6')
+  api project(':module08:module426:module09')
+  api project(':module08:module441:module6')
+  api project(':module08:module441:module7')
+  api project(':module08:module445:module14:module1')
+  api project(':module08:module445:module14:module2')
+  api project(':module08:module482:module4:module2')
+  api project(':module08:module486:module1')
+  api project(':module08:module587:module2')
+  api project(':module08:module595:module1')
+  api project(':module08:module633:module3')
+  api project(':module08:module636:module1')
+  api project(':module08:module652:module1')
+  api project(':module08:module674:module1')
+  api project(':module08:module704:module11')
+  api project(':module08:module744:module1')
+  api project(':module08:module759:module1:module2')
+  api project(':module08:module779:module03')
+  api project(':module08:module779:module05')
+  api project(':module08:module779:module07')
+  api project(':module08:module779:module09')
+  api project(':module08:module779:module11')
+  api project(':module08:module785:module5')
+  api project(':module08:module810:module1')
+  api project(':module08:module817:module2')
+  api project(':module08:module819:module1')
+  api project(':module08:module841:module1')
+  api project(':module16:module03:module1')
+  api project(':module16:module05:module1:module1')
+  api project(':module16:module05:module2:module1')
+  api project(':module16:module09:module1')
+  api project(':module16:module13:module1:module1')
+  api project(':module16:module13:module2:module1')
+  api project(':module16:module13:module4:module1')
+  api project(':module16:module13:module4:module2')
+  api project(':module16:module13:module5:module1')
+  api project(':module16:module13:module6:module1')
+  api project(':module16:module13:module7:module1')
+  api project(':module16:module14:module1:module1')
+  api project(':module16:module14:module2:module1')
+  api project(':module16:module14:module3:module1')
+  api project(':module16:module15:module1:module2')
+  api project(':module16:module15:module3:module1')
+  api project(':module16:module16:module1')
+  api 'com.google.dagger:dagger:2.50'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+}

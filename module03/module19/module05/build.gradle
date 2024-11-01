@@ -1,0 +1,131 @@
+plugins {
+  id 'com.android.library'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module03.module19.module05'
+  defaultConfig {
+    minSdkVersion 25
+    targetSdkVersion 29
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation project(':module08:module705:module1')
+  androidTestImplementation project(':module08:module808:module1')
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  androidTestImplementation 'androidx.compose.runtime:runtime:1.5.4'
+  androidTestImplementation 'com.squareup.anvil:annotations:2.5.0-beta09'
+  androidTestImplementation 'org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.20'
+  annotationProcessor 'com.google.dagger:dagger-compiler:2.50'
+  api project(':module03:module19:module03')
+  api project(':module03:module19:module06')
+  api project(':module03:module21:module3')
+  api project(':module06:module55:module6')
+  api project(':module07:module06:module02:module2')
+  api project(':module07:module06:module10:module5')
+  api project(':module07:module06:module14:module2')
+  api project(':module07:module06:module27:module3')
+  api project(':module07:module06:module30:module3')
+  api project(':module07:module11:module1')
+  api project(':module07:module17:module2')
+  api project(':module07:module20:module10')
+  api project(':module08:module014:module2')
+  api project(':module08:module032:module3')
+  api project(':module08:module133:module2:module5')
+  api project(':module08:module143:module1')
+  api project(':module08:module199:module3')
+  api project(':module08:module211:module2')
+  api project(':module08:module216:module1')
+  api project(':module08:module223:module09')
+  api project(':module08:module243:module1')
+  api project(':module08:module249:module5')
+  api project(':module08:module291:module02:module4:module5')
+  api project(':module08:module316:module5')
+  api project(':module08:module322:module3')
+  api project(':module08:module323:module4')
+  api project(':module08:module367:module3')
+  api project(':module08:module385:module5')
+  api project(':module08:module409:module01:module05')
+  api project(':module08:module414:module4')
+  api project(':module08:module419:module3')
+  api project(':module08:module435:module03')
+  api project(':module08:module435:module05')
+  api project(':module08:module435:module06')
+  api project(':module08:module436:module4')
+  api project(':module08:module489:module3')
+  api project(':module08:module497:module4')
+  api project(':module08:module549:module06:module3')
+  api project(':module08:module549:module07:module4')
+  api project(':module08:module583:module2')
+  api project(':module08:module607:module5')
+  api project(':module08:module620:module4')
+  api project(':module08:module656:module4')
+  api project(':module08:module703:module4')
+  api project(':module08:module712:module2')
+  api project(':module08:module716:module3')
+  api project(':module08:module750:module07')
+  api project(':module08:module809:module1')
+  api project(':module09:module08:module2:module3')
+  api project(':module09:module08:module3:module3')
+  api project(':module09:module17:module04:module5')
+  api project(':module09:module17:module06:module2')
+  api project(':module09:module17:module07:module2')
+  api project(':module09:module17:module08:module1')
+  api project(':module09:module17:module08:module3')
+  api project(':module09:module17:module09:module2')
+  api project(':module09:module17:module13:module5')
+  api project(':module09:module19:module4')
+  api project(':module09:module28:module3')
+  api project(':module09:module29:module06')
+  api project(':module09:module35:module4')
+  api project(':module11:module1')
+  api project(':module14:module2:module4')
+  api project(':module17:module1:module24:module2')
+  api project(':module17:module1:module31:module4')
+  api project(':module17:module1:module34:module3')
+  api project(':module17:module1:module36:module1')
+  api project(':module17:module2:module01:module3')
+  api project(':module17:module2:module03:module2')
+  api project(':module17:module2:module06:module2')
+  api project(':module17:module2:module05:module3')
+  api project(':module17:module2:module09:module2')
+  api project(':module17:module2:module10:module3')
+  api project(':module17:module2:module15:module2')
+  api project(':module17:module2:module17:module4')
+  api project(':module17:module2:module17:module5')
+  api project(':module17:module2:module22:module5')
+  api project(':module17:module2:module23:module2')
+  api project(':module17:module2:module24:module4')
+  api project(':module17:module2:module25:module2')
+  api project(':module17:module2:module33:module2')
+  api project(':module17:module2:module34:module2')
+  api project(':module17:module2:module37:module2')
+  api project(':module17:module2:module39:module2')
+  api project(':module17:module2:module38:module06')
+  api project(':module17:module2:module41:module2')
+  api project(':module17:module2:module43:module2')
+  api project(':module17:module2:module44:module3')
+  api project(':module17:module2:module46:module2')
+  api project(':module17:module2:module48:module3')
+  api project(':module17:module2:module54:module2')
+  api project(':module21:module1:module51:module1')
+  api project(':module21:module1:module61')
+  api project(':module21:module3:module03')
+  api project(':module21:module3:module11')
+  api project(':module21:module3:module12')
+  api 'com.google.dagger:dagger:2.50'
+  api 'com.squareup.leakcanary:leakcanary-android-instrumentation:3.0-alpha-8'
+  compileOnly project(':module08:module705:module1')
+  compileOnly project(':module08:module808:module1')
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  compileOnly 'androidx.compose.runtime:runtime:1.5.4'
+  compileOnly 'com.squareup.anvil:annotations:2.5.0-beta09'
+  compileOnly 'org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.20'
+}

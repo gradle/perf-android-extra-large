@@ -1,0 +1,28 @@
+plugins {
+  id 'com.android.library'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module09.module05.module1'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  buildFeatures {
+    buildConfig = false
+    androidResources = true
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api 'androidx.activity:activity:1.7.0'
+  api 'com.squareup.sdk:point-of-sale-sdk:2.1'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module641:module1')
+  implementation project(':module08:module819:module2')
+  implementation 'com.squareup.logcat:logcat:0.1'
+}

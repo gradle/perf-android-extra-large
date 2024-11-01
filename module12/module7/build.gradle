@@ -1,0 +1,49 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+  id 'org.jetbrains.kotlin.kapt'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module12.module7'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = true
+    androidResources = true
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module12:module6')
+  api 'com.squareup.android:truststore:1.10.0'
+  api 'com.squareup.moshi:moshi:1.15.0'
+  api 'com.squareup.okhttp3:okhttp:4.11.0'
+  api 'com.squareup.retrofit2:retrofit:2.11.0'
+  api 'javax.inject:javax.inject:1'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation 'com.google.dagger:dagger:2.50'
+  implementation 'com.squareup.android:socket-factory:1.5.0'
+  implementation 'com.squareup.okhttp3:logging-interceptor:4.11.0'
+  implementation 'com.squareup.okio:okio:3.5.0'
+  implementation 'com.squareup.retrofit2:converter-moshi:2.11.0'
+  implementation 'javax.inject:javax.inject:1'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  kapt 'com.google.dagger:dagger-compiler:2.50'
+  kapt 'com.squareup.moshi:moshi-kotlin-codegen:1.15.0'
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+  testImplementation 'org.mockito.kotlin:mockito-kotlin:4.1.0'
+  testImplementation 'org.mockito:mockito-core:4.4.0'
+}

@@ -1,0 +1,60 @@
+plugins {
+  id 'com.android.library'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module15.module1.module2'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  annotationProcessor 'com.google.dagger:dagger-compiler:2.50'
+  api project(':module06:module03:module3')
+  api project(':module06:module50:module5')
+  api project(':module06:module60:module3')
+  api project(':module07:module02:module3')
+  api project(':module07:module08:module3')
+  api project(':module08:module033:module5')
+  api project(':module08:module086:module6')
+  api project(':module08:module113:module1')
+  api project(':module08:module119:module3')
+  api project(':module08:module120:module1')
+  api project(':module08:module125:module1')
+  api project(':module08:module132:module1')
+  api project(':module08:module148')
+  api project(':module08:module169:module3')
+  api project(':module08:module180:module4')
+  api project(':module08:module190')
+  api project(':module08:module247')
+  api project(':module08:module253:module1')
+  api project(':module08:module310')
+  api project(':module08:module326')
+  api project(':module08:module324:module6')
+  api project(':module08:module382:module3')
+  api project(':module08:module388:module2')
+  api project(':module08:module410:module14:module3')
+  api project(':module08:module431')
+  api project(':module08:module447:module2')
+  api project(':module08:module514:module1')
+  api project(':module08:module554:module3')
+  api project(':module08:module608:module3')
+  api project(':module08:module616:module2')
+  api project(':module08:module737:module2')
+  api project(':module08:module793:module6')
+  api project(':module08:module815:module2')
+  api project(':module09:module31')
+  api project(':module15:module1:module3')
+  api 'com.google.dagger:dagger:2.50'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module491:module1')
+}

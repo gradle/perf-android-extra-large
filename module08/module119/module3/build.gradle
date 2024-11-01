@@ -1,0 +1,107 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module119.module3'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module06:module28:module9')
+  api project(':module06:module60:module3')
+  api project(':module07:module02:module4')
+  api project(':module07:module07:module4')
+  api project(':module07:module08:module3')
+  api project(':module07:module25:module2')
+  api project(':module08:module004:module4')
+  api project(':module08:module022:module3')
+  api project(':module08:module031:module1:module1')
+  api project(':module08:module069:module2')
+  api project(':module08:module107:module8')
+  api project(':module08:module119:module1')
+  api project(':module08:module119:module4')
+  api project(':module08:module148')
+  api project(':module08:module152:module6')
+  api project(':module08:module211:module4')
+  api project(':module08:module220')
+  api project(':module08:module222:module7')
+  api project(':module08:module240:module4')
+  api project(':module08:module239:module1')
+  api project(':module08:module250:module3')
+  api project(':module08:module253:module1')
+  api project(':module08:module286:module2')
+  api project(':module08:module289')
+  api project(':module08:module291:module10:module4:module5')
+  api project(':module08:module291:module10:module7:module5')
+  api project(':module08:module326')
+  api project(':module08:module338:module6')
+  api project(':module08:module376:module1')
+  api project(':module08:module380')
+  api project(':module08:module388:module2')
+  api project(':module08:module393:module3')
+  api project(':module08:module400:module6')
+  api project(':module08:module409:module01:module10')
+  api project(':module08:module409:module11:module1')
+  api project(':module08:module409:module11:module2')
+  api project(':module08:module431')
+  api project(':module08:module434:module1')
+  api project(':module08:module441:module7')
+  api project(':module08:module444:module6')
+  api project(':module08:module448:module6')
+  api project(':module08:module486:module1')
+  api project(':module08:module550:module4')
+  api project(':module08:module561:module1:module1')
+  api project(':module08:module561:module4:module3')
+  api project(':module08:module576:module3')
+  api project(':module08:module597:module2')
+  api project(':module08:module597:module3')
+  api project(':module08:module602:module1')
+  api project(':module08:module612:module3')
+  api project(':module08:module613:module1')
+  api project(':module08:module614:module1')
+  api project(':module08:module620:module2')
+  api project(':module08:module649:module5')
+  api project(':module08:module648:module7')
+  api project(':module08:module652:module3')
+  api project(':module08:module672:module2')
+  api project(':module08:module680:module1')
+  api project(':module08:module707:module3')
+  api project(':module08:module704:module11')
+  api project(':module08:module709:module3')
+  api project(':module08:module779:module03')
+  api project(':module08:module779:module05')
+  api project(':module08:module779:module07')
+  api project(':module08:module779:module09')
+  api project(':module08:module779:module11')
+  api project(':module08:module781:module4')
+  api project(':module08:module785:module5')
+  api project(':module08:module793:module5')
+  api project(':module08:module817:module2')
+  api project(':module08:module816:module1:module1')
+  api project(':module08:module844:module2')
+  api 'com.google.dagger:dagger:2.50'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module118:module3:module4')
+  implementation project(':module08:module118:module3:module5')
+  implementation project(':module08:module118:module4:module3')
+  implementation project(':module08:module677:module1')
+  implementation project(':module08:module803:module1')
+  implementation 'com.squareup.workflow1:workflow-ui-radiography:1.12.1-beta10'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+}

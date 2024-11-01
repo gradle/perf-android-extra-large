@@ -1,0 +1,36 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+  id 'org.jetbrains.kotlin.kapt'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module22.module03.module20.module2'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    androidResources = true
+  }
+}
+dependencies {
+  api 'com.squareup.okhttp3:okhttp:4.11.0'
+  api 'com.squareup.retrofit2:retrofit:2.11.0'
+  implementation project(':module22:module10')
+  implementation 'com.google.dagger:dagger:2.50'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-common:1.9.20'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.20'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.20'
+  implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+  implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+  implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0'
+  kapt 'com.google.dagger:dagger-compiler:2.50'
+}

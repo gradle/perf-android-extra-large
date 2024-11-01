@@ -1,0 +1,52 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+  id 'org.jetbrains.kotlin.kapt'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module618.module1'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module08:module004:module6')
+  api project(':module08:module355:module1')
+  api project(':module08:module506:module1')
+  api project(':module08:module707:module4')
+  api project(':module08:module708:module1')
+  api project(':module08:module830')
+  api project(':module08:module837:module1:module2')
+  api 'com.google.dagger:dagger:2.50'
+  api 'io.reactivex.rxjava2:rxjava:2.2.21'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module226:module2')
+  implementation project(':module08:module819:module2')
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  kapt 'com.google.dagger:dagger-compiler:2.50'
+  testImplementation project(':module08:module226:module3')
+  testImplementation project(':module08:module465:module1')
+  testImplementation project(':module08:module484:module1')
+  testImplementation project(':module08:module779:module13')
+  testImplementation project(':module08:module817:module4')
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+  testImplementation 'org.mockito.kotlin:mockito-kotlin:4.1.0'
+  testImplementation 'org.mockito:mockito-core:4.4.0'
+  testImplementation 'org.robolectric:robolectric:4.11.1'
+}

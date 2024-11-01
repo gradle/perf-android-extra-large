@@ -1,0 +1,91 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+  id 'org.jetbrains.kotlin.kapt'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module07.module11.module2'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+    androidResources = true
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module01:module06:module1')
+  api project(':module08:module491:module1')
+  api project(':module08:module836:module2')
+  api 'com.google.dagger:dagger:2.50'
+  api 'com.squareup.workflow1:workflow-ui-core-android:1.12.1-beta10'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module01:module11')
+  implementation project(':module06:module53')
+  implementation project(':module07:module01:module4')
+  implementation project(':module07:module02:module4')
+  implementation project(':module07:module06:module11:module3')
+  implementation project(':module07:module06:module17:module5')
+  implementation project(':module07:module15:module2')
+  implementation project(':module07:module23:module3:module5')
+  implementation project(':module08:module008:module4')
+  implementation project(':module08:module033:module6')
+  implementation project(':module08:module069:module3')
+  implementation project(':module08:module070:module3')
+  implementation project(':module08:module143:module2')
+  implementation project(':module08:module148')
+  implementation project(':module08:module152:module6')
+  implementation project(':module08:module190')
+  implementation project(':module08:module228:module1')
+  implementation project(':module08:module233:module2')
+  implementation project(':module08:module253:module1')
+  implementation project(':module08:module260:module1')
+  implementation project(':module08:module286:module4')
+  implementation project(':module08:module289')
+  implementation project(':module08:module290')
+  implementation project(':module08:module291:module10:module4:module5')
+  implementation project(':module08:module354:module1')
+  implementation project(':module08:module355:module1')
+  implementation project(':module08:module367:module4')
+  implementation project(':module08:module364:module4')
+  implementation project(':module08:module375')
+  implementation project(':module08:module434:module1')
+  implementation project(':module08:module461')
+  implementation project(':module08:module482:module4:module4')
+  implementation project(':module08:module650:module1')
+  implementation project(':module08:module709:module4')
+  implementation project(':module08:module743:module2')
+  implementation project(':module08:module750:module10')
+  implementation project(':module08:module755:module1')
+  implementation project(':module08:module778:module4')
+  implementation project(':module08:module795:module1')
+  implementation project(':module08:module793:module6')
+  implementation project(':module08:module830')
+  implementation project(':module08:module827:module1')
+  implementation project(':module08:module844:module2')
+  implementation project(':module08:module846:module2')
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  kapt 'com.google.dagger:dagger-compiler:2.50'
+  testImplementation project(':module08:module226:module3')
+  testImplementation project(':module08:module338:module8')
+  testImplementation project(':module08:module484:module1')
+  testImplementation project(':module08:module620:module4')
+  testImplementation project(':module08:module709:module5')
+  testImplementation project(':module08:module817:module4')
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+  testImplementation 'org.mockito.kotlin:mockito-kotlin:4.1.0'
+  testImplementation 'org.mockito:mockito-core:4.4.0'
+}

@@ -1,0 +1,56 @@
+plugins {
+  id 'com.android.library'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module03.module01.module5'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation project(':module08:module705:module1')
+  androidTestImplementation project(':module08:module808:module1')
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  androidTestImplementation 'androidx.compose.runtime:runtime:1.5.4'
+  androidTestImplementation 'com.squareup.anvil:annotations:2.5.0-beta09'
+  androidTestImplementation 'org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.20'
+  annotationProcessor 'com.google.dagger:dagger-compiler:2.50'
+  api project(':module03:module01:module3')
+  api project(':module03:module07:module3')
+  api 'com.google.dagger:dagger:2.50'
+  compileOnly project(':module02:module23:module1')
+  compileOnly project(':module02:module31:module1')
+  compileOnly project(':module08:module576:module3')
+  compileOnly project(':module08:module705:module1')
+  compileOnly project(':module08:module808:module1')
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  compileOnly 'androidx.compose.runtime:runtime:1.5.4'
+  compileOnly 'com.squareup.anvil:annotations:2.5.0-beta09'
+  compileOnly 'org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.20'
+  implementation project(':module02:module26:module3:module1:module2')
+  implementation project(':module02:module34:module2')
+  implementation project(':module02:module37:module1')
+  implementation project(':module02:module40:module1')
+  implementation project(':module02:module47:module2')
+  implementation project(':module03:module01:module6')
+  implementation project(':module03:module01:module7')
+  implementation project(':module08:module253:module1')
+  implementation project(':module08:module269')
+  implementation project(':module08:module711:module1')
+  implementation project(':module08:module714:module1')
+  implementation project(':module09:module16')
+  implementation project(':module15:module1:module1')
+  implementation 'androidx.sqlite:sqlite:2.3.0'
+  implementation 'com.f2prateek.rx.preferences2:rx-preferences:2.0.2'
+  implementation 'com.jakewharton.threetenabp:threetenabp:1.4.4'
+  implementation 'io.reactivex.rxjava2:rxjava:2.2.21'
+}

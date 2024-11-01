@@ -1,0 +1,62 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+  id 'org.jetbrains.kotlin.kapt'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module211.module1'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module08:module211:module4')
+  api project(':module08:module253:module1')
+  api 'com.google.dagger:dagger:2.50'
+  api 'javax.inject:javax.inject:1'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  kapt 'com.google.dagger:dagger-compiler:2.50'
+  testImplementation project(':module06:module50:module1')
+  testImplementation project(':module08:module187:module4')
+  testImplementation project(':module08:module193')
+  testImplementation project(':module08:module198:module9')
+  testImplementation project(':module08:module226:module3')
+  testImplementation project(':module08:module299:module2')
+  testImplementation project(':module08:module324:module9')
+  testImplementation project(':module08:module338:module8')
+  testImplementation project(':module08:module484:module1')
+  testImplementation project(':module08:module485:module2')
+  testImplementation project(':module08:module549:module09:module1')
+  testImplementation project(':module08:module569:module3')
+  testImplementation project(':module08:module604:module1')
+  testImplementation project(':module08:module610:module3:module5')
+  testImplementation project(':module08:module671:module5')
+  testImplementation project(':module08:module675:module3')
+  testImplementation project(':module08:module679:module2')
+  testImplementation project(':module08:module770:module1:module4')
+  testImplementation project(':module08:module804:module1')
+  testImplementation project(':module08:module805:module2')
+  testImplementation project(':module08:module817:module4')
+  testImplementation project(':module08:module819:module3')
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+  testImplementation 'org.mockito.kotlin:mockito-kotlin:4.1.0'
+  testImplementation 'org.mockito:mockito-core:4.4.0'
+  testImplementation 'org.robolectric:robolectric:4.11.1'
+}

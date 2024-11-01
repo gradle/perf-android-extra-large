@@ -1,0 +1,96 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+  id 'org.jetbrains.kotlin.kapt'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module22.module02.module1.module1'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    androidResources = true
+  }
+}
+dependencies {
+  api project(':module22:module02:module1:module2')
+  api project(':module22:module03:module01')
+  api project(':module22:module03:module02')
+  api project(':module22:module03:module03:module1')
+  api project(':module22:module03:module04')
+  api project(':module22:module03:module05')
+  api project(':module22:module03:module06')
+  api project(':module22:module03:module07')
+  api project(':module22:module03:module08')
+  api project(':module22:module03:module09')
+  api project(':module22:module03:module10')
+  api project(':module22:module03:module11')
+  api project(':module22:module03:module12')
+  api project(':module22:module03:module13:module1')
+  api project(':module22:module03:module14')
+  api project(':module22:module03:module15')
+  api project(':module22:module03:module16')
+  api project(':module22:module03:module17')
+  api project(':module22:module03:module18')
+  api project(':module22:module03:module19')
+  api project(':module22:module03:module20:module2')
+  api project(':module22:module03:module21')
+  api project(':module22:module03:module22')
+  api project(':module22:module03:module23')
+  api project(':module22:module03:module24:module1')
+  api project(':module22:module03:module25')
+  api project(':module22:module03:module26')
+  api project(':module22:module03:module27')
+  api project(':module22:module04')
+  api project(':module22:module05')
+  api project(':module22:module06:module01')
+  api project(':module22:module06:module02')
+  api project(':module22:module06:module03')
+  api project(':module22:module06:module04')
+  api project(':module22:module06:module05')
+  api project(':module22:module06:module06')
+  api project(':module22:module06:module07')
+  api project(':module22:module06:module08')
+  api project(':module22:module06:module09')
+  api project(':module22:module06:module11:module1')
+  api project(':module22:module06:module11:module2')
+  api project(':module22:module06:module12')
+  api project(':module22:module06:module13')
+  api project(':module22:module06:module15:module1')
+  api project(':module22:module06:module15:module2')
+  api project(':module22:module06:module16')
+  api project(':module22:module06:module17:module1')
+  api project(':module22:module06:module17:module2')
+  api project(':module22:module07:module1')
+  api project(':module22:module07:module2')
+  api project(':module22:module07:module3')
+  api project(':module22:module07:module4')
+  api project(':module22:module07:module5')
+  api project(':module22:module07:module6')
+  api project(':module22:module07:module7')
+  api project(':module22:module07:module8')
+  api project(':module22:module08')
+  api project(':module22:module09')
+  api project(':module22:module10')
+  api project(':module22:module11')
+  api project(':module22:module12')
+  api project(':module22:module14')
+  api 'com.mindorks.nybus:nybus-android:1.0.0'
+  api 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.5.0'
+  implementation 'com.google.dagger:dagger:2.50'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-common:1.9.20'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.20'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.20'
+  implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+  implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+  kapt 'com.google.dagger:dagger-compiler:2.50'
+}

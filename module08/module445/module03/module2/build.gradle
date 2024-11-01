@@ -1,0 +1,52 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module445.module03.module2'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation project(':module08:module348:module2')
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  androidTestImplementation 'androidx.test:rules:1.5.0'
+  androidTestImplementation 'androidx.test:runner:1.5.2'
+  androidTestImplementation 'com.google.truth:truth:1.2.0'
+  androidTestImplementation 'junit:junit:4.13.2'
+  androidTestImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+  androidTestImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3'
+  api project(':module08:module445:module02:module1')
+  api 'com.squareup.sqldelight:runtime-jvm:1.5.5'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module445:module12:module2')
+  implementation 'com.squareup.moshi:moshi:1.15.0'
+  implementation 'com.squareup.sqldelight:android-driver:1.5.5'
+  implementation 'com.squareup.sqldelight:coroutines-extensions:1.5.5'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  testImplementation project(':module08:module484:module1')
+  testImplementation 'androidx.test.ext:junit:1.1.5'
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'com.squareup.sqldelight:sqlite-driver:1.5.5'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+  testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3'
+  testImplementation 'org.mockito.kotlin:mockito-kotlin:4.1.0'
+  testImplementation 'org.mockito:mockito-core:4.4.0'
+  testImplementation 'org.robolectric:robolectric:4.11.1'
+}

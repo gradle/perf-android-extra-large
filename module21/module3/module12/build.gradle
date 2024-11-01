@@ -1,0 +1,53 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module21.module3.module12'
+  defaultConfig {
+    minSdkVersion 25
+    targetSdkVersion 29
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module01:module08:module3')
+  api project(':module07:module06:module28:module2')
+  api project(':module08:module806:module2')
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module06:module16:module11')
+  implementation project(':module07:module06:module02:module2')
+  implementation project(':module07:module06:module27:module3')
+  implementation project(':module07:module06:module30:module3')
+  implementation project(':module07:module06:module33:module4')
+  implementation project(':module07:module20:module10')
+  implementation project(':module08:module044:module1')
+  implementation project(':module08:module131:module2')
+  implementation project(':module08:module229:module7')
+  implementation project(':module08:module426:module07')
+  implementation project(':module08:module440:module4')
+  implementation project(':module08:module695:module4')
+  implementation project(':module08:module829')
+  implementation project(':module08:module831')
+  implementation project(':module11:module1')
+  implementation project(':module21:module1:module37')
+  implementation project(':module21:module1:module38:module3')
+  implementation project(':module21:module1:module54:module5')
+  implementation project(':module21:module3:module04')
+  implementation project(':module21:module3:module06')
+  implementation project(':module21:module3:module10')
+  implementation project(':module21:module3:module13:module1')
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+}

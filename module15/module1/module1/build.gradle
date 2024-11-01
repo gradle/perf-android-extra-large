@@ -1,0 +1,34 @@
+plugins {
+  id 'com.android.library'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module15.module1.module1'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  annotationProcessor 'com.google.dagger:dagger-compiler:2.50'
+  api project(':module08:module044:module1')
+  api project(':module08:module119:module3')
+  api project(':module08:module273:module3')
+  api project(':module08:module338:module6')
+  api project(':module08:module388:module2')
+  api project(':module08:module785:module5')
+  api project(':module08:module806:module2')
+  api project(':module15:module1:module2')
+  api project(':module15:module1:module3')
+  api 'com.google.dagger:dagger:2.50'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module711:module1')
+}

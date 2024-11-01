@@ -1,0 +1,33 @@
+plugins {
+  id 'com.android.library'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module375'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  buildFeatures {
+    buildConfig = false
+    androidResources = true
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module08:module147:module1')
+  api project(':module08:module765:module4')
+  api project(':module08:module817:module3')
+  api 'androidx.appcompat:appcompat:1.6.1'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module810:module3')
+  testImplementation project(':module08:module819:module3')
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.glassfish.jaxb:jaxb-runtime:3.0.2'
+  testImplementation 'org.glassfish:javax.xml.stream:3.0.1'
+}

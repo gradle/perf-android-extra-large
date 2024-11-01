@@ -1,0 +1,23 @@
+plugins {
+  id 'com.android.application'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module16.module08'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  buildFeatures {
+    buildConfig = true
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation 'androidx.appcompat:appcompat:1.6.1'
+}

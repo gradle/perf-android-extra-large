@@ -1,0 +1,19 @@
+plugins {
+  id 'java-library'
+  id 'java'
+  id 'org.jetbrains.kotlin.jvm'
+  id 'org.jetbrains.kotlin.kapt'
+}
+dependencies {
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  compileOnly 'com.google.auto.service:auto-service-annotations:1.0'
+  implementation 'com.squareup:kotlinpoet:1.15.3'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  implementation 'org.jetbrains.kotlinx:kotlinx-serialization-core:1.5.0'
+  kapt 'com.google.auto.service:auto-service:1.0'
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'com.squareup.wire:wire-compiler:4.7.0'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+}

@@ -1,0 +1,79 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module404.module2'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+    androidResources = true
+    compose = true
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.5.4'
+  api project(':module08:module229:module9')
+  api project(':module08:module253:module1')
+  api project(':module08:module324:module8')
+  api project(':module08:module403:module1')
+  api project(':module08:module404:module3')
+  api project(':module08:module406:module6')
+  api project(':module08:module427:module2')
+  api project(':module08:module426:module12')
+  api project(':module08:module486:module2')
+  api project(':module08:module704:module12')
+  api project(':module08:module776:module1')
+  api project(':module08:module778:module4')
+  api project(':module08:module838:module1')
+  api project(':module08:module837:module2:module1')
+  api 'com.google.dagger:dagger:2.50'
+  api 'com.squareup.workflow1:workflow-core:1.12.1-beta10'
+  api 'com.squareup.workflow1:workflow-ui-compose:1.12.1-beta10'
+  api 'com.squareup.workflow1:workflow-ui-core-common-jvm:1.12.1-beta10'
+  api 'javax.inject:javax.inject:1'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  api 'org.jetbrains.kotlinx:kotlinx-collections-immutable:0.3.7'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module209:module2')
+  implementation project(':module08:module393:module4')
+  implementation project(':module08:module469:module1:module3')
+  implementation project(':module08:module588:module1')
+  implementation project(':module08:module620:module3')
+  implementation project(':module08:module705:module1')
+  implementation project(':module08:module755:module1')
+  implementation project(':module08:module820:module1')
+  implementation project(':module08:module839:module2')
+  implementation project(':module08:module837:module1:module2')
+  implementation project(':module25:module5:module1')
+  implementation 'androidx.compose.foundation:foundation:1.5.4'
+  implementation 'com.squareup.okio:okio:3.5.0'
+  implementation 'com.squareup.picasso3:picasso:3.0.0-alpha03'
+  implementation 'com.squareup.workflow1:workflow-ui-core-android:1.12.1-beta10'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+  testImplementation project(':module08:module484:module1')
+  testImplementation project(':module08:module570:module1')
+  testImplementation project(':module08:module620:module4')
+  testImplementation project(':module08:module817:module4')
+  testImplementation project(':module08:module819:module3')
+  testImplementation 'com.google.testparameterinjector:test-parameter-injector:1.8'
+  testImplementation 'com.google.truth:truth:1.2.0'
+  testImplementation 'com.squareup.workflow1:workflow-testing-jvm:1.12.1-beta10'
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'org.jetbrains.kotlin:kotlin-test-junit:1.9.20'
+  testImplementation 'org.mockito.kotlin:mockito-kotlin:4.1.0'
+  testImplementation 'org.mockito:mockito-core:4.4.0'
+}

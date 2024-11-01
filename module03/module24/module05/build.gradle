@@ -1,0 +1,101 @@
+plugins {
+  id 'com.android.library'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module03.module24.module05'
+  defaultConfig {
+    minSdkVersion 25
+    targetSdkVersion 29
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation project(':module08:module705:module1')
+  androidTestImplementation project(':module08:module808:module1')
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  androidTestImplementation 'androidx.compose.runtime:runtime:1.5.4'
+  androidTestImplementation 'com.squareup.anvil:annotations:2.5.0-beta09'
+  androidTestImplementation 'org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.20'
+  annotationProcessor 'com.google.dagger:dagger-compiler:2.50'
+  api project(':module03:module21:module3')
+  api project(':module03:module24:module03')
+  api project(':module03:module24:module06')
+  api project(':module06:module20:module03')
+  api project(':module06:module39:module5')
+  api project(':module07:module06:module02:module2')
+  api project(':module07:module06:module05:module2')
+  api project(':module07:module06:module11:module2')
+  api project(':module07:module06:module13:module2')
+  api project(':module07:module06:module14:module2')
+  api project(':module07:module06:module17:module4')
+  api project(':module07:module06:module19:module2')
+  api project(':module07:module06:module27:module3')
+  api project(':module07:module06:module29:module3')
+  api project(':module07:module06:module30:module3')
+  api project(':module07:module06:module33:module4')
+  api project(':module07:module08:module2')
+  api project(':module07:module20:module10')
+  api project(':module08:module051:module5')
+  api project(':module08:module129:module2')
+  api project(':module08:module131:module2')
+  api project(':module08:module144:module1:module3')
+  api project(':module08:module145:module3')
+  api project(':module08:module253:module1')
+  api project(':module08:module284:module3')
+  api project(':module08:module322:module3')
+  api project(':module08:module323:module4')
+  api project(':module08:module335:module1:module5')
+  api project(':module08:module382:module2')
+  api project(':module08:module425:module3')
+  api project(':module08:module441:module2')
+  api project(':module08:module450:module07')
+  api project(':module08:module453:module4')
+  api project(':module08:module454:module3')
+  api project(':module08:module448:module1')
+  api project(':module08:module448:module4')
+  api project(':module08:module469:module1:module2')
+  api project(':module08:module501:module3')
+  api project(':module08:module566:module5')
+  api project(':module08:module576:module3')
+  api project(':module08:module611:module1:module4')
+  api project(':module08:module620:module4')
+  api project(':module08:module630:module4')
+  api project(':module08:module698:module3')
+  api project(':module08:module711:module1')
+  api project(':module08:module712:module2')
+  api project(':module08:module731:module6')
+  api project(':module08:module750:module07')
+  api project(':module08:module785:module1')
+  api project(':module08:module785:module5')
+  api project(':module11:module1')
+  api project(':module15:module1:module1')
+  api project(':module21:module1:module29')
+  api project(':module21:module1:module39:module2')
+  api project(':module21:module1:module61')
+  api project(':module21:module3:module03')
+  api project(':module21:module3:module08')
+  api project(':module21:module3:module09')
+  api project(':module21:module3:module11')
+  api project(':module23:module2:module2')
+  api project(':module23:module3:module2')
+  api project(':module23:module3:module5')
+  api project(':module23:module4:module1')
+  api project(':module23:module5:module1')
+  api project(':module23:module6:module2')
+  api project(':module23:module8:module2')
+  api 'com.google.dagger:dagger:2.50'
+  api 'com.squareup.leakcanary:leakcanary-android-instrumentation:3.0-alpha-8'
+  compileOnly project(':module08:module705:module1')
+  compileOnly project(':module08:module808:module1')
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  compileOnly 'androidx.compose.runtime:runtime:1.5.4'
+  compileOnly 'com.squareup.anvil:annotations:2.5.0-beta09'
+  compileOnly 'org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.20'
+}

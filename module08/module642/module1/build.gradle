@@ -1,0 +1,44 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module642.module1'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module08:module152:module6')
+  api project(':module08:module253:module1')
+  api project(':module08:module642:module4')
+  api 'com.google.dagger:dagger:2.50'
+  api 'javax.inject:javax.inject:1'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module07:module02:module4')
+  implementation project(':module08:module286:module4')
+  implementation project(':module08:module289')
+  implementation project(':module08:module338:module7')
+  implementation project(':module08:module353:module1')
+  implementation project(':module08:module600:module3')
+  implementation project(':module08:module803:module1')
+  implementation 'com.f2prateek.rx.preferences2:rx-preferences:2.0.2'
+  implementation 'com.google.dagger:dagger:2.50'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  testImplementation project(':module08:module226:module3')
+  testImplementation 'com.squareup.workflow1:workflow-testing-jvm:1.12.1-beta10'
+}

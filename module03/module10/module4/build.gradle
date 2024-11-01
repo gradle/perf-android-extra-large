@@ -1,0 +1,55 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+  id 'org.jetbrains.kotlin.kapt'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module03.module10.module4'
+  defaultConfig {
+    minSdkVersion 25
+    targetSdkVersion 29
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+    compose = true
+  }
+}
+dependencies {
+  androidTestImplementation project(':module08:module705:module1')
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  androidTestImplementation 'androidx.compose.runtime:runtime:1.5.4'
+  androidTestImplementation 'androidx.compose.ui:ui-test-junit4:1.5.4'
+  androidTestImplementation 'com.squareup.anvil:annotations:2.5.0-beta09'
+  androidTestImplementation 'org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.20'
+  api 'com.google.dagger:dagger:2.50'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly project(':module08:module705:module1')
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  compileOnly 'androidx.compose.runtime:runtime:1.5.4'
+  compileOnly 'com.squareup.anvil:annotations:2.5.0-beta09'
+  compileOnly 'org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.20'
+  implementation project(':module03:module10:module3')
+  implementation project(':module08:module336:module1')
+  implementation project(':module08:module492:module1')
+  implementation project(':module08:module779:module03')
+  implementation project(':module08:module779:module09')
+  implementation project(':module08:module779:module11')
+  implementation project(':module08:module816:module1:module1')
+  implementation project(':module21:module1:module44:module2')
+  implementation 'androidx.activity:activity-ktx:1.7.0'
+  implementation 'androidx.appcompat:appcompat:1.6.1'
+  implementation 'androidx.camera:camera-camera2:1.2.3'
+  implementation 'androidx.camera:camera-view:1.2.3'
+  implementation 'androidx.compose.foundation:foundation:1.5.4'
+  implementation 'androidx.lifecycle:lifecycle-common:2.6.1'
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  kapt 'com.google.dagger:dagger-compiler:2.50'
+}

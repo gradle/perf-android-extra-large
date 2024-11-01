@@ -1,0 +1,35 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module219.module2'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = false
+  }
+}
+dependencies {
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  api project(':module08:module253:module1')
+  api project(':module08:module704:module12')
+  api 'com.google.dagger:dagger:2.50'
+  api 'com.jakewharton.threetenabp:threetenabp:1.4.4'
+  api 'com.squareup.retrofit2:retrofit:2.11.0'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  implementation project(':module08:module705:module1')
+  implementation project(':module08:module817:module3')
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+}

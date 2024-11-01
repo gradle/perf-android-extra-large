@@ -1,0 +1,121 @@
+plugins {
+  id 'com.android.application'
+  id 'org.jetbrains.kotlin.android'
+  id 'org.jetbrains.kotlin.kapt'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module08.module648.module1'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    buildConfig = true
+  }
+}
+dependencies {
+  androidTestImplementation project(':module08:module020:module2')
+  androidTestImplementation project(':module08:module122:module2')
+  androidTestImplementation project(':module08:module270:module04')
+  androidTestImplementation project(':module08:module270:module07')
+  androidTestImplementation project(':module08:module333:module7')
+  androidTestImplementation project(':module08:module338:module5')
+  androidTestImplementation project(':module08:module489:module3')
+  androidTestImplementation project(':module08:module497:module4')
+  androidTestImplementation project(':module08:module648:module4')
+  androidTestImplementation project(':module08:module705:module1')
+  androidTestImplementation project(':module08:module806:module2')
+  androidTestImplementation project(':module08:module808:module1')
+  androidTestImplementation project(':module08:module807:module1')
+  androidTestImplementation 'androidx.annotation:annotation:1.2.0'
+  androidTestImplementation 'androidx.compose.runtime:runtime:1.5.4'
+  androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+  androidTestImplementation 'androidx.test.espresso:espresso-intents:3.3.0'
+  androidTestImplementation 'androidx.test:rules:1.5.0'
+  androidTestImplementation 'androidx.test:runner:1.5.2'
+  androidTestImplementation 'com.google.dagger:dagger:2.50'
+  androidTestImplementation 'com.squareup.anvil:annotations:2.5.0-beta09'
+  androidTestImplementation 'junit:junit:4.13.2'
+  androidTestImplementation 'org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.20'
+  api project(':module08:module180:module4')
+  api project(':module08:module253:module1')
+  api project(':module08:module333:module4')
+  api project(':module08:module557:module2')
+  api project(':module08:module602:module1')
+  api project(':module08:module648:module7')
+  api 'com.google.dagger:dagger:2.50'
+  api 'org.jetbrains.kotlin:kotlin-stdlib:1.9.20'
+  compileOnly project(':module08:module705:module1')
+  compileOnly 'androidx.annotation:annotation:1.2.0'
+  compileOnly 'androidx.compose.runtime:runtime:1.5.4'
+  compileOnly 'com.squareup.anvil:annotations:2.5.0-beta09'
+  compileOnly 'org.jetbrains.kotlin:kotlin-parcelize-runtime:1.9.20'
+  implementation project(':module08:module008:module1')
+  implementation project(':module08:module030:module6:module2')
+  implementation project(':module08:module030:module8:module1')
+  implementation project(':module08:module025:module1:module4')
+  implementation project(':module08:module033:module3')
+  implementation project(':module08:module040:module2')
+  implementation project(':module08:module042:module2')
+  implementation project(':module08:module047:module1')
+  implementation project(':module08:module049:module1')
+  implementation project(':module08:module062:module3')
+  implementation project(':module08:module122:module1')
+  implementation project(':module08:module196:module4')
+  implementation project(':module08:module249:module2')
+  implementation project(':module08:module249:module4')
+  implementation project(':module08:module270:module05')
+  implementation project(':module08:module324:module1')
+  implementation project(':module08:module338:module4')
+  implementation project(':module08:module340:module3')
+  implementation project(':module08:module390:module1')
+  implementation project(':module08:module393:module3')
+  implementation project(':module08:module426:module05')
+  implementation project(':module08:module429:module1')
+  implementation project(':module08:module445:module15:module1')
+  implementation project(':module08:module482:module4:module2')
+  implementation project(':module08:module487:module1')
+  implementation project(':module08:module488:module1')
+  implementation project(':module08:module489:module2')
+  implementation project(':module08:module489:module4')
+  implementation project(':module08:module496:module3')
+  implementation project(':module08:module498:module1')
+  implementation project(':module08:module499:module1')
+  implementation project(':module08:module500:module1')
+  implementation project(':module08:module497:module3')
+  implementation project(':module08:module510:module3')
+  implementation project(':module08:module514:module3')
+  implementation project(':module08:module549:module09:module1')
+  implementation project(':module08:module589:module2')
+  implementation project(':module08:module600:module1')
+  implementation project(':module08:module601:module1')
+  implementation project(':module08:module620:module2')
+  implementation project(':module08:module633:module3')
+  implementation project(':module08:module633:module4')
+  implementation project(':module08:module640:module1')
+  implementation project(':module08:module648:module2')
+  implementation project(':module08:module648:module3')
+  implementation project(':module08:module669:module2')
+  implementation project(':module08:module671:module2')
+  implementation project(':module08:module720:module4')
+  implementation project(':module08:module723:module1')
+  implementation project(':module08:module731:module2')
+  implementation project(':module08:module775:module1')
+  implementation project(':module08:module778:module2')
+  implementation project(':module08:module785:module5')
+  implementation project(':module08:module792:module2:module2')
+  implementation project(':module08:module804:module3')
+  implementation project(':module08:module840:module2')
+  implementation project(':module08:module837:module3:module1')
+  implementation project(':module09:module32:module2')
+  implementation 'org.jetbrains.kotlin:kotlin-bom:1.9.20'
+  kapt 'com.google.dagger:dagger-compiler:2.50'
+}

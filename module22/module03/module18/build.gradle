@@ -1,0 +1,38 @@
+plugins {
+  id 'com.android.library'
+  id 'org.jetbrains.kotlin.android'
+  id 'org.jetbrains.kotlin.kapt'
+}
+android {
+  compileSdkVersion = 'android-34'
+  namespace = 'module22.module03.module18'
+  defaultConfig {
+    minSdkVersion 24
+    targetSdkVersion 33
+  }
+  compileOptions {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+  }
+  kotlinOptions {
+    jvmTarget = '1.8'
+  }
+  buildFeatures {
+    androidResources = true
+  }
+}
+dependencies {
+  implementation project(':module08:module253:module1')
+  implementation project(':module22:module03:module12')
+  implementation project(':module22:module03:module25')
+  implementation 'androidx.core:core-ktx:1.12.0'
+  implementation 'androidx.security:security-crypto-ktx:1.1.0-alpha06'
+  implementation 'com.google.dagger:dagger:2.50'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-common:1.9.20'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.20'
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.20'
+  implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+  implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+  kapt 'com.google.dagger:dagger-compiler:2.50'
+  testImplementation project(':module22:module13')
+}

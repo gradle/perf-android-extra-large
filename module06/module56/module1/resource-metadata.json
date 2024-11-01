@@ -1,0 +1,28 @@
+{
+  "androidResources": {
+    "animator": [],
+    "anim": [],
+    "color": [],
+    "drawable": [],
+    "font": [],
+    "layout": [],
+    "menu": [],
+    "mipmap": [],
+    "navigation": [],
+    "raw": [],
+    "transition": [],
+    "values": [],
+    "xml": []
+  },
+  "javaResources": {},
+  "assets": {
+    "wav": [
+      21612,
+      11084,
+      316470,
+      185264,
+      53074,
+      7884
+    ]
+  }
+}
